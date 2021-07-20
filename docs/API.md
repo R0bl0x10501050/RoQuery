@@ -9,6 +9,6 @@ Install RoQuery by requiring the module.
     ```
 
 # RoQuery(selector)
-@constructor
-@param selector<String> - The selector used to fetch Instances from the Instance tree.
-@returns <ElementGroup>
+Type - Class:Method:constructor
+Param (selector: strong) - The selector used to fetch Instances from the Instance tree.
+Returns - ElementGroup
