@@ -11,23 +11,15 @@ Install RoQuery by requiring the module.
 [Get The Module](#){ .md-button .md-button--primary }
 
 # RoQuery
-
 ## RoQuery(selector)
 **Description:**
-
 The beginning constructor for RoQuery.
-
 **Type:**
-
 `Class:Method:constructor`
-
 **Params:**
-
 `selector: string`
 :   The selector used to fetch Instances from the Instance tree.
-
 **Returns:**
-
 [ElementGroup](#elementgroup)
 
 # ElementGroup
