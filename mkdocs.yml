@@ -27,9 +27,7 @@ theme:
   features:
     - header.autohide
     - navigation.expand
-    - navigation.tabs
     - navigation.top
-    - toc.integrate
   icon:
     logo: material/magnify
   favicon: assets/images/magnify.svg
@@ -56,5 +54,3 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
-  - toc:
-      permalink: true
