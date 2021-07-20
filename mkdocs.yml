@@ -26,7 +26,7 @@ theme:
         name: Turn On The Lights
 
 nav:
-  - Home: Introduction.md
+  - Home: index.md
   - API Reference: API.md
     
 markdown_extensions:
