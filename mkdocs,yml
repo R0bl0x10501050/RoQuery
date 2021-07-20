@@ -27,6 +27,7 @@ theme:
 
 nav:
   - Home: Introduction.md
+  - API Reference: API.md
     
 markdown_extensions:
   - admonition
