@@ -47,6 +47,9 @@ markdown_extensions:
   - attr_list
   - def_list
   - meta
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
