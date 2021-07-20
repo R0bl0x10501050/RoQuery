@@ -1,10 +1,3 @@
-# Installation
-Install RoQuery by requiring the module.
-=== "Lua"
-    ```lua
-    local S = require("path/to/RoQuery.lua")
-    ```
-[Get The Module](#){ .md-button .md-button--primary }
 # RoQuery
 ## RoQuery(selector)
 **Description:**
