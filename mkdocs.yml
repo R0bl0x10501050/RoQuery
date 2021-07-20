@@ -25,11 +25,14 @@ theme:
         icon: material/toggle-switch
         name: Turn On The Lights
   features:
-    - toc.integrate
     - header.autohide
+    - navigation.expand
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
   icon:
     logo: material/magnify
-  favicon: images/magnify.svg
+  favicon: assets/images/magnify.svg
   
 extra:
   social:
