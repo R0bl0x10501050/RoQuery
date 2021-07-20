@@ -24,9 +24,6 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Turn On The Lights
-  features:
-    - header.autohide
-    - navigation.top
   icon:
     logo: material/magnify
   favicon: assets/images/magnify.svg
