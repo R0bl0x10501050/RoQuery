@@ -171,7 +171,7 @@ Kills all connnections tied to the Element.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:even()
+## ElementGroup:even()
 **Description:**
 
 Returns the even-indexed Elements in the ElementGroup.
@@ -249,7 +249,7 @@ Toggle between invisible and visible.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:filter(selector)
+## ElementGroup:filter(selector)
 **Description:**
 
 Returns the current Elements that matched with the selector.
@@ -267,7 +267,7 @@ Returns the current Elements that matched with the selector.
 
 [ElementGroup](#elementgroup) (the Elements that matched with the selector)
 
-# ElementGroup:first()
+## ElementGroup:first()
 **Description:**
 
 Returns the first Element (in the form of an ElementGroup) of the current ElementGroup.
@@ -282,7 +282,7 @@ Returns the first Element (in the form of an ElementGroup) of the current Elemen
 
 [ElementGroup](#elementgroup) (the first Element)
 
-# ElementGroup:focusin(callback)
+## ElementGroup:focusin(callback)
 **Description:**
 
 Adds a callback to MouseEnter. Equivalent to `self:on("MouseEnter", callback)`.
@@ -300,7 +300,7 @@ Adds a callback to MouseEnter. Equivalent to `self:on("MouseEnter", callback)`.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:focusout(callback)
+## ElementGroup:focusout(callback)
 **Description:**
 
 Adds a callback to MouseLeave. Equivalent to `self:on("MouseLeave", callback)`.
@@ -318,7 +318,7 @@ Adds a callback to MouseLeave. Equivalent to `self:on("MouseLeave", callback)`.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:foreach(callback)
+## ElementGroup:foreach(callback)
 **Description:**
 
 Call the callback on each Element in the current ElementGroup.
@@ -336,7 +336,25 @@ Call the callback on each Element in the current ElementGroup.
 
 Table (the return value of all the callbacks)
 
-# ElementGroup:hide(duration)
+## ElementGroup:has(selector)
+**Description:**
+
+Filter out the Elements that don't have a descendant that matches the selector.
+
+**Type:**
+
+`Class:Method`
+
+**Params:**
+
+`selector: string`
+:   The selector that is used on each Element to check if it has a descendant that matches the selector.
+
+**Returns:**
+
+[ElementGroup](#elementgroup) (itself but filtered to not include the Elements that don't have a descendant that matches the selector)
+
+## ElementGroup:hide(duration)
 **Description:**
 
 Like self:fadeOut(), but time is customizable.
@@ -354,7 +372,7 @@ Like self:fadeOut(), but time is customizable.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:hover(mouseIn, mouseOut)
+## ElementGroup:hover(mouseIn, mouseOut)
 **Description:**
 
 Adds up to two callbacks (MouseEnter, MouseLeave). Equivalent to `self:on("MouseEnter", mouseIn):on("MouseLeave", mouseOut)`.
@@ -375,7 +393,58 @@ Adds up to two callbacks (MouseEnter, MouseLeave). Equivalent to `self:on("Mouse
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:odd()
+## ElementGroup:is(selector)
+**Description:**
+
+Return true if at least one Elements in the ElementGroup matches the selector.
+
+**Type:**
+
+`Class:Method`
+
+**Params:**
+
+`selector: string`
+:   The selector that is used on each Element to check if it matches the selector.
+
+**Returns:**
+
+Boolean
+
+## ElementGroup:isNot(selector)
+**Description:**
+
+Filters out Elements that DO match the selector.
+
+**Type:**
+
+`Class:Method`
+
+**Params:**
+
+`selector: string`
+:   The selector that is used on each Element to check if it matches the selector.
+
+**Returns:**
+
+[ElementGroup](#elementgroup) (the non-matched Elements)
+
+## ElementGroup:last()
+**Description:**
+
+Returns the last Element (in the form of an ElementGroup) of the current ElementGroup.
+
+**Type:**
+
+`Class:Method`
+
+**Params:**
+
+**Returns:**
+
+[ElementGroup](#elementgroup) (the last Element)
+
+## ElementGroup:odd()
 **Description:**
 
 Returns the odd-indexed Elements in the ElementGroup.
@@ -390,7 +459,7 @@ Returns the odd-indexed Elements in the ElementGroup.
 
 [ElementGroup](#elementgroup) (the odd-indexed entries)
 
-# ElementGroup:on(eventName, tagName, callback)
+## ElementGroup:on(eventName, tagName, callback)
 **Description:**
 
 Adds a callback to event `instance[eventName]`.
@@ -414,7 +483,7 @@ Adds a callback to event `instance[eventName]`.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:off(eventName, tagName)
+## ElementGroup:off(eventName, tagName)
 **Description:**
 
 Removes a callback from event `instance[eventName]`.
@@ -435,7 +504,7 @@ Removes a callback from event `instance[eventName]`.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:parent()
+## ElementGroup:parent()
 **Description:**
 
 Gets the parent of the current Element.
@@ -450,7 +519,7 @@ Gets the parent of the current Element.
 
 [ElementGroup](#elementgroup) of the parent
 
-# ElementGroup:parents(selector)
+## ElementGroup:parents(selector)
 **Description:**
 
 Gets the parents of the current Element and filter out the ones that DO NOT match the selector.
@@ -466,7 +535,25 @@ Gets the parents of the current Element and filter out the ones that DO NOT matc
 
 **Returns:**
 
-[ElementGroup](#elementgroup) of the parent
+[ElementGroup](#elementgroup) of the parents
+
+## ElementGroup:parentsUntil(selector)
+**Description:**
+
+Gets the parents of the current Element until one matches the selector.
+
+**Type:**
+
+`Class:Method`
+
+**Params:**
+
+`selector: string?`
+:   The selector used as the boundary.
+
+**Returns:**
+
+[ElementGroup](#elementgroup) of the parents
 
 ## ElementGroup:prop(get, set)
 **Description:**
@@ -491,6 +578,24 @@ IF get AND set: [ElementGroup](#elementgroup) (itself)
 
 IF get AND NOT set: `any`
 
+## ElementGroup:remove(selector)
+**Description:**
+
+Deletes the Elements that match the selector, and returns the ones that don't.
+
+**Type:**
+
+`Class:Method`
+
+**Params:**
+
+`selector: string?`
+:   The selector used as the deciding factor of whether an Element would be deleted or not.
+
+**Returns:**
+
+[ElementGroup](#elementgroup) (the ones that weren't removed)
+
 ## ElementGroup:setText(text)
 **Description:**
 
@@ -509,7 +614,7 @@ Sets the Text property of the Element.
 
 [ElementGroup](#elementgroup) (itself)
 
-# ElementGroup:show(duration)
+## ElementGroup:show(duration)
 **Description:**
 
 Like self:fadeIn(), but time is customizable.
@@ -522,6 +627,24 @@ Like self:fadeIn(), but time is customizable.
 
 `duration: number? (default: 0)`
 :   Amount of time for Element to fade in.
+
+**Returns:**
+
+[ElementGroup](#elementgroup) (itself)
+
+## ElementGroup:wait(duration)
+**Description:**
+
+Yield the current thread.
+
+**Type:**
+
+`Class:Method`
+
+**Params:**
+
+`duration: number? (default: 0)`
+:   Amount of time for the thread to yield.
 
 **Returns:**
 
