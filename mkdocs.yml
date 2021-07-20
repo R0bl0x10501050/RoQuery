@@ -24,7 +24,17 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Turn On The Lights
+  features:
+    - toc.integrate
+    - header.autohide
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/R0bl0x10501050
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/@R0bl0x10501050
+      
 nav:
   - Home: index.md
   - API Reference: API.md
@@ -36,3 +46,4 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
+  - toc
