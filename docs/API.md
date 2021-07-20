@@ -8,7 +8,9 @@ Install RoQuery by requiring the module.
     local S = require("path/to/RoQuery.lua")
     ```
 
-# RoQuery(selector)
+# API Reference
+
+## RoQuery(selector)
 Type - Class:Method:constructor
 Param (selector: strong) - The selector used to fetch Instances from the Instance tree.
 Returns - ElementGroup
