@@ -41,6 +41,7 @@ extra:
 nav:
   - Home: index.md
   - API Reference: API.md
+  - Test: test.md
     
 markdown_extensions:
   - admonition
