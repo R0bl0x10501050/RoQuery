@@ -30,6 +30,7 @@ theme:
   icon:
     logo: material/magnify
   favicon: material/magnify
+  
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -48,10 +49,5 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
-  - search:
-      lang:
-        - en
-        - es
-        - pt
-        - fr
+  - search
   - toc
