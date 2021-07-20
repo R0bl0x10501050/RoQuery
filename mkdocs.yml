@@ -26,7 +26,6 @@ theme:
         name: Turn On The Lights
   features:
     - header.autohide
-    - navigation.expand
     - navigation.top
   icon:
     logo: material/magnify
