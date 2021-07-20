@@ -6,10 +6,10 @@ The beginning constructor for RoQuery.
 `Class:Method:constructor`
 **Params:**
 `selector: string`
-:   The selector used to fetch Instances from the Instance tree.
+:   The selector used to fetch Instances from the Instance tree.  return
 **Returns:**
 [ElementGroup](#elementgroup)
-# ElementGroup
+## ElementGroup
 ## ElementGroup:add(param)
 **Description:**
 Adds an instance in the Element.
