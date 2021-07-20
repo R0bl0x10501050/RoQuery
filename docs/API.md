@@ -12,7 +12,7 @@ Install RoQuery by requiring the module.
 
 ## RoQuery (BASE)
 
-## RoQuery(selector)
+### RoQuery(selector)
 **Description:**
 
 The beginning constructor for RoQuery.
@@ -31,7 +31,7 @@ The beginning constructor for RoQuery.
 
 ## ElementGroup (CLASS)
 
-## ElementGroup:add(param)
+### ElementGroup:add(param)
 **Description:**
 
 Adds an instance in the Element.
