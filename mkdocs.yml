@@ -42,12 +42,14 @@ nav:
   - Home: index.md
   - Examples: examples.md
   - API Reference: API.md
+  - How To Query: QuerySelecting.md
     
 markdown_extensions:
   - admonition
   - attr_list
   - def_list
   - meta
+  - pymdownx.details
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
