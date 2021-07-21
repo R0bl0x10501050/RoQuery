@@ -1,6 +1,6 @@
 # About
 
-RoQuery is a simple yet blazing fast module for Roblox games that allows you to write less code and do more. 
+RoQuery is a simple yet blazing fast module for Roblox games that allows you to do more with your code.
 
 RoQuery was first published on 7/20/21.
 
