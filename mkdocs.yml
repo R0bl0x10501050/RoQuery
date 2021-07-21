@@ -40,8 +40,8 @@ extra:
       
 nav:
   - Home: index.md
+  - Examples: examples.md
   - API Reference: API.md
-  - Test: test.md
     
 markdown_extensions:
   - admonition
