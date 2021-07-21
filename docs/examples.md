@@ -10,7 +10,7 @@
     end)
     ```
     
-## Name All Parts "Thingy" (Except HRP)
+### Name All Parts "Thingy" (Except HRP)
 
 === "Lua"
 
