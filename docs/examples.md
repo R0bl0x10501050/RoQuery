@@ -1,5 +1,3 @@
-## Examples
-
 ### Print A Part's Ancestors
 
 === "Lua"
