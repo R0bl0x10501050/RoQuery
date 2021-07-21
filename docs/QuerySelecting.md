@@ -1,6 +1,6 @@
 ## How QuerySelecting Works
 
-**Note: If you know CSS, this should be a piece of cake - literally. 🍰**
+**Note: If you know CSS, this should be a piece of cake - literally.** [🍰]("alert$.next('Have some cake!')")
 
 Consider the following string:
 ```lua
