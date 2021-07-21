@@ -8,7 +8,7 @@ Install RoQuery by requiring the module.
     local S = require("path/to/RoQuery.lua")
     ```
 
-[Get The Module](#){ .md-button .md-button--primary }
+[Get The Module](https://www.roblox.com/library/7128769023/RoQuery){ .md-button .md-button--primary }
 
 ## RoQuery (BASE)
 
